@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function ab(){
+            document.getElementById("akash").style.color="green"
+            document.getElementById("akash").style.fontSize="2rem"
+            document.getElementById("akash").innerHTML="welcome"
+        }
+        function out(){
+            document.getElementById("akash").style.color="Black"
+            document.getElementById("akash").innerHTML="Calculator"
+        }
+        function mu()
+        {
+            v1=document.getElementById("n1").value;
+            v2=document.getElementById("n2").value;
+            res =parseFloat(v1)*parseFloat(v2);
+    
+            res=document.getElementById("res").value=res;
+        }
+        function add()
+        {
+            v1=document.getElementById("n1").value;
+            v2=document.getElementById("n2").value;
+        
+            res =parseFloat(v1)+parseFloat(v2);
+            res=document.getElementById("res").value=res;
+        }
+        function sub()
+        {
+            v1=document.getElementById("n1").value;
+            v2=document.getElementById("n2").value;
+        
+            res =parseFloat(v1)-parseFloat(v2);
+            res=document.getElementById("res").value=res;
+        }
+        function div()
+        {
+            v1=document.getElementById("n1").value;
+            v2=document.getElementById("n2").value;
+        
+            res =parseFloat(v1)/parseFloat(v2);
+            res=document.getElementById("res").value=res;
+        }
+
+    </script>
+    </head>
+    <body>
+<h3 id="akash" onmouseover="ab()" onmouseout="out()"> CALCULATOR</h3>  
+<form>
+<h4>Number 1</h4>  
+<input type="text" id="n1">  
+<h4>Number 2</h4>  
+<input type="text" id="n2"></br></br>  
+<h4>Result</h4>  
+<input type="text" id="res"></br></br> 
+<input type="button" value="Addition" onclick="add();"/>  
+<input type="button" value="Subtraction" onclick="sub();"/>  
+<input type="button" value="Division" onclick="div();"/>
+<input type="button" value="Multiplication" onclick="mu();"/>
+<pre>          <input type="Reset" value="Reset"/></pre>
+
+</form>
+</body>  
+</html>

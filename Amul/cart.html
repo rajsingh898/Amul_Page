@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Your Cart</title>
+	<script>
+		(function(){
+			const cartInfo = document.getElementById('cart-info');
+			const cart = document.getElementById('cart');
+			cartInfo.addEventListener('click',function(){
+				cart.classList.toggle('show-cart');
+			})
+		})();
+
+		//adding item to  cart
+		(function(){
+		const cartBtn = document.querySelectorAll('.addcart');
+		cartBtn.forEach(function(btn){
+			btn.addEventListener('click',function(event){
+				//console.log(event.target);
+				if(event.target.parentElement.classList('addcart'));
+			})
+		})
+
+		})();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

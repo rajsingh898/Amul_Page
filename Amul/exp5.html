@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+  	<title>Experiment 5 Maps</title>
+  	<link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+  	<script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+   </head>
+
+   <body>
+       <center>
+           
+       <h1>Sakshi Exp-5 Map</h1>
+       
+    
+  	<div id = "map" style = "width: 1280px; height: 600px"></div>
+  	<script>
+     	// Creating map options
+     	var mapOptions = {
+        	center: [19.240330, 73.130539],
+            center: [20.218330, 72.978088],
+        	zoom: 11
+     	}
+    	 
+     	// Creating a map object
+     	var map = new L.map('map', mapOptions);
+    	 
+     	// Creating a Layer object
+     	var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+    	 
+     	// Adding layer to the map
+     	map.addLayer(layer);
+    
+     	// Creating a marker
+     	var marker = L.marker([19.240330, 73.130539]);
+         var marker2 = L.marker([20.218330, 72.978088]);
+    	 
+     	// Adding marker to the map
+     	marker.addTo(map);
+        marker2.addTo(map);
+        
+  	</script>
+      </center>
+   </body>
+   
+</html>
